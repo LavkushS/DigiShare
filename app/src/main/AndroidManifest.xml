@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.firstapp.groupproject">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="DigiShare"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.GroupProject"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".details"
+            android:label="Book Details"
+            android:parentActivityName=".VisitStoreActivity" />
+        <activity
+            android:name=".AboutActivity"
+            android:label="About The App"
+            android:parentActivityName=".DashboardActivity" />
+        <activity
+            android:name=".VisitStoreActivity"
+            android:label="Store"
+            android:parentActivityName=".DashboardActivity" />
+        <activity
+            android:name=".AddBookActivity"
+            android:label="Add Book"
+            android:parentActivityName=".DashboardActivity" />
+        <activity android:name=".SignUpActivity" />
+        <activity android:name=".DashboardActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

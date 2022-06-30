@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="Sort by"
+        android:id="@+id/filter">
+
+        <menu>
+            <item
+                android:title="Ascending Order of Book Title"
+                android:id="@+id/asc"/>
+            <item
+                android:title="Descending Order of Book Title"
+                android:id="@+id/desc"/>
+            <item
+                android:title="Academic Genre"
+                android:id="@+id/acad"/>
+            <item
+                android:title="Non Academic Genre"
+                android:id="@+id/nonacad"/>
+        </menu>
+
+    </item>
+</menu>
